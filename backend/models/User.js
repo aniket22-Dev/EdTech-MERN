@@ -35,6 +35,12 @@ const userSchema = new moongose.Schema({
     type: String,
     required: true,
   },
+  toke: {
+    type: String,
+  },
+  resetPasswordExpires: {
+    type: Date,
+  },
   courseProgress: [
     {
       type: moongose.Schema.Types.ObjectId,
