@@ -113,3 +113,38 @@ exports.showAllCourses = async (req, res) => {
     console.log(error);
   }
 };
+
+exports.getCourseDetail = async (req, res) => {
+  try {
+    //
+    const { courseId } = req.body;
+    const courseDetails = await Course.find({ _id: courseId })
+      .populate({
+        path: "instructor",
+        populate: {
+          path: "additionalDetails",
+        },
+      })
+      .populate("category")
+      .populate("ratingAndReviews")
+      .populate({
+        path: "courseContent",
+        populate: {
+          path: "subSection",
+        },
+      })
+      .exec();
+
+    //validations
+    if (!courseDetails) {
+      //return response 400 and success will be false with message should include courseId
+    }
+
+    return res.status(200).json({
+      sucess: true,
+      message: "Course Details fetched sucessfully",
+    });
+  } catch (err) {
+    //return status code 500 with sucess false and a message
+  }
+};
