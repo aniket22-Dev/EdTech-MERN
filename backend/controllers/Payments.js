@@ -17,7 +17,7 @@ exports.capturePayment = async (req, res) => {
 
     try {
       course = await Course.findById(course_id);
-
+   
       if (!course) {
         //return response 404
       }
