@@ -1,17 +1,15 @@
-const moongose = require(moongose);
-requrie("dotend").config();
+const mongoose = require("mongoose");
+require("dotenv").config();
 
 exports.connect = () => {
-  moongose
-    .connect(process.env.MONGODB_URL, {
-      useNewURLParser: true,
-      useUnifiedTopology: true,
+    mongoose.connect(process.env.MONGODB_URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology:true,
     })
-    .then(() => {
-      console.log("Databse Connected Successfully!!");
-    })
-    .catch((err) => {
-      console.log("Could not connect to the database", err);
-      process.exit();
-    });
+    .then(() => console.log("DB Connected Successfully"))
+    .catch( (error) => {
+        console.log("DB Connection Failed");
+        console.error(error);
+        process.exit(1);
+    } )
 };
