@@ -1,10 +1,10 @@
 name: CI/CD
 
 on:
-  push:
+  pull_request:
     branches:
       - main
-  pull_request_target:
+  push:
     branches:
       - main
 
