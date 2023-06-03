@@ -2,11 +2,9 @@ name: CI/CD
 
 on:
   push:
-    branches:
-      - master
+    branches: ["master"]
   pull_request:
-    branches:
-      - master
+    branches: ["master"]
 
 jobs:
   build:
@@ -23,6 +21,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: backend
 
       - name: Run tests
-        run: npm test
+        run: npx jest
+        working-directory: backend/test
