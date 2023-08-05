@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="fixed bug for payment api">
+    <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="added checkout js for razorpay">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/payments.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/payments.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691255725709</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added checkout js for razorpay">
+      <option name="closed" value="true" />
+      <created>1691257329656</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1691257329656</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +205,8 @@
     <MESSAGE value="updated frontend deployment" />
     <MESSAGE value="fixed bug for catalog api" />
     <MESSAGE value="fixed bug for payment api" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug for payment api" />
+    <MESSAGE value="added checkout js for razorpay" />
+    <option name="LAST_COMMIT_MESSAGE" value="added checkout js for razorpay" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
