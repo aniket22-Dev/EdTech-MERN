@@ -66,13 +66,13 @@ export async function BuyCourse(
 
     // Opening the Razorpay SDK
     const options = {
-      key: "rzp_test_9RU4gQkJh6bSLE", // Replace this with your Razorpay API key
+      key: "rzp_test_9RU4gQkJh6bSLE",
       currency: orderResponse.data.data.currency,
       amount: `${orderResponse.data.data.amount}`,
       order_id: orderResponse.data.data.id,
       name: "StudyNotion",
       description: "Thank you for Purchasing the Course.",
-      image: "URL_OR_PATH_TO_YOUR_LOGO", // Replace this with your logo image URL or path
+      image: rzpLogo,
       prefill: {
         name: `${user_details.firstName} ${user_details.lastName}`,
         email: user_details.email,
@@ -95,7 +95,6 @@ export async function BuyCourse(
   }
   toast.dismiss(toastId)
 }
-
 
 // Verify the Payment
 async function verifyPayment(bodyData, token, navigate, dispatch) {
