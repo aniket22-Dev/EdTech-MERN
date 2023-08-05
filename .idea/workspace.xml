@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="code refactored">
-      <change afterPath="$PROJECT_DIR$/server/test/example.test.js" afterDir="false" />
+    <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="added jest">
       <change beforePath="$PROJECT_DIR$/.github/workflows/cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cd.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691238096470</updated>
-      <workItem from="1691238101634" duration="3421000" />
+      <workItem from="1691238101634" duration="3481000" />
     </task>
     <task id="LOCAL-00001" summary="changed directory structure">
       <option name="closed" value="true" />
@@ -87,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691241638046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added jest">
+      <option name="closed" value="true" />
+      <created>1691242003916</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691242003916</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed directory structure" />
     <MESSAGE value="code refactored" />
-    <option name="LAST_COMMIT_MESSAGE" value="code refactored" />
+    <MESSAGE value="added jest" />
+    <option name="LAST_COMMIT_MESSAGE" value="added jest" />
   </component>
 </project>
