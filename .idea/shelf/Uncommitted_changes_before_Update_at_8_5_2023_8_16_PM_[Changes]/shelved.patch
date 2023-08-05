@@ -1,0 +1,65 @@
+Index: server/package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n\t\"name\": \"studynotion-backend\",\r\n\t\"version\": \"1.0.0\",\r\n\t\"description\": \"studynotion-backend\",\r\n \"main\": \"index.js\",\r\n  \"scripts\": {\r\n    \"start\": \"node index.js\",\r\n    \"dev\": \"nodemon index.js\",\r\n    \"build\": \"nodemon index.js\"\r\n  },\r\n\t\"keywords\": [\r\n\t\t\"studynotion-backend\"\r\n\t],\r\n\t\"author\": \"Saikat Mukherjee\",\r\n\t\"license\": \"ISC\",\r\n\t\"dependencies\": {\r\n\t\t\"bcrypt\": \"^5.1.0\",\r\n\t\t\"bcryptjs\": \"^2.4.3\",\r\n\t\t\"cloudinary\": \"^1.36.4\",\r\n\t\t\"cookie-parser\": \"^1.4.6\",\r\n\t\t\"cors\": \"^2.8.5\",\r\n\t\t\"crypto-random-string\": \"^5.0.0\",\r\n\t\t\"dotenv\": \"^16.0.3\",\r\n\t\t\"express\": \"^4.18.2\",\r\n\t\t\"express-fileupload\": \"^1.4.0\",\r\n\t\t\"jsonwebtoken\": \"^9.0.0\",\r\n\t\t\"mongoose\": \"^7.0.3\",\r\n\t\t\"node-schedule\": \"^2.1.1\",\r\n\t\t\"nodemailer\": \"^6.9.1\",\r\n\t\t\"nodemon\": \"^2.0.22\",\r\n\t\t\"otp-generator\": \"^4.0.1\",\r\n\t\t\"razorpay\": \"^2.8.6\"\r\n\t},\r\n\t\"devDependencies\": {\r\n\t\t\"jest\": \"^29.6.2\"\r\n\t}\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/server/package.json b/server/package.json
+--- a/server/package.json	(revision d558079771585102b1b787d4f694c98ad03a690e)
++++ b/server/package.json	(date 1691246612173)
+@@ -6,7 +6,7 @@
+   "scripts": {
+     "start": "node index.js",
+     "dev": "nodemon index.js",
+-    "build": "nodemon index.js"
++    "build": "node index.js"
+   },
+ 	"keywords": [
+ 		"studynotion-backend"
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e51d6fd0-4ee3-4010-996d-d64e945f70eb\" name=\"Changes\" comment=\"added jest\">\r\n      <change beforePath=\"$PROJECT_DIR$/.github/workflows/cd.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.github/workflows/cd.yml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2TZ687Ul4ghi0bCMu8MWacBfCro\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"release-V1\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e51d6fd0-4ee3-4010-996d-d64e945f70eb\" name=\"Changes\" comment=\"\" />\r\n      <created>1691238096470</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1691238096470</updated>\r\n      <workItem from=\"1691238101634\" duration=\"3481000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"changed directory structure\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1691239065798</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1691239065798</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"code refactored\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1691241373168</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1691241373168</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"code refactored\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1691241452224</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1691241452224</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"code refactored\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1691241638046</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1691241638046</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"added jest\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1691242003916</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1691242003916</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"changed directory structure\" />\r\n    <MESSAGE value=\"code refactored\" />\r\n    <MESSAGE value=\"added jest\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"added jest\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d558079771585102b1b787d4f694c98ad03a690e)
++++ b/.idea/workspace.xml	(date 1691246612348)
+@@ -5,7 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="added jest">
+-      <change beforePath="$PROJECT_DIR$/.github/workflows/cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cd.yml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -50,7 +51,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1691238096470</updated>
+-      <workItem from="1691238101634" duration="3481000" />
++      <workItem from="1691238101634" duration="6178000" />
+     </task>
+     <task id="LOCAL-00001" summary="changed directory structure">
+       <option name="closed" value="true" />
+@@ -92,7 +93,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1691242003916</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="added jest">
++      <option name="closed" value="true" />
++      <created>1691242030894</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1691242030894</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
