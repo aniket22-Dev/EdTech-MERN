@@ -6,8 +6,7 @@
 	"scripts": {
 		"start": "node index.js",
 		"dev": "nodemon index.js",
-    "build": "nodemon index.js",
-    "build:production": "nodemon index.js"
+    "start": "NODE_ENV=production node app.js"
 	},
 	"keywords": [
 		"studynotion-backend"
