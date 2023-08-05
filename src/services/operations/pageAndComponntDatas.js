@@ -4,9 +4,8 @@ import { apiConnector } from "../apiConnector"
 import { catalogData } from "../apis"
 
 export const getCatalogPageData = async (categoryId) => {
-  const toastId = toast.loading("Loading...");
-  let result = [];
-
+  const toastId = toast.loading("Loading...")
+  let result = []
   try {
     const response = await apiConnector(
       "POST",
@@ -14,20 +13,16 @@ export const getCatalogPageData = async (categoryId) => {
       {
         categoryId: categoryId,
       }
-    );
-
+    )
     if (!response?.data?.success) {
-      throw new Error("Could Not Fetch Category page data.");
+      throw new Error("Could Not Fetch Catagory page data.")
     }
-
-    result = response?.data?.data; // Make sure 'data' property exists in the response
+    result = response?.data
   } catch (error) {
-    console.log("CATALOGPAGEDATA_API API ERROR............", error);
-    toast.error(error.message);
-    result = []; // Set an appropriate default value or handle the error case
+    console.log("CATALOGPAGEDATA_API API ERROR............", error)
+    toast.error(error.message)
+    result = error.response?.data
   }
-
-  toast.dismiss(toastId);
-  return result;
-};
-
+  toast.dismiss(toastId)
+  return result
+}
