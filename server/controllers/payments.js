@@ -54,8 +54,9 @@ exports.capturePayment = async (req, res) => {
       success: true,
       data: paymentResponse,
     });
-  } catch (error) {
+  }  catch (error) {
     console.log("Error in capturePayment:", error);
+    console.log("Razorpay Error Response:", error.response);
     res.status(500).json({ success: false, message: "Could not initiate order." });
   }
 };
