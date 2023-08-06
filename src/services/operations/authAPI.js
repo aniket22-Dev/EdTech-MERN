@@ -98,6 +98,7 @@ export function login(email, password, navigate) {
 
       //console.log("LOGIN API RESPONSE............", response)
       LOG_TAIL_KEY.info("Login SuccessFully", response);
+      LOG_TAIL_KEY.flush()
       if (!response.data.success) {
         throw new Error(response.data.message)
       }
