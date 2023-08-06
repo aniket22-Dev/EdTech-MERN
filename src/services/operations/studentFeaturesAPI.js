@@ -28,14 +28,22 @@ function loadScript(src) {
 }
 
 // Buy the Course
-export async function BuyCourse(token, courses, user_details, navigate, dispatch) {
+export async function BuyCourse(
+  token,
+  courses,
+  user_details,
+  navigate,
+  dispatch
+) {
   const toastId = toast.loading("Loading...")
   try {
     // Loading the script of Razorpay SDK
     const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js")
 
     if (!res) {
-      toast.error("Razorpay SDK failed to load. Check your Internet Connection.")
+      toast.error(
+        "Razorpay SDK failed to load. Check your Internet Connection."
+      )
       return
     }
 
@@ -58,20 +66,20 @@ export async function BuyCourse(token, courses, user_details, navigate, dispatch
 
     // Opening the Razorpay SDK
     const options = {
-      key: "rzp_test_9RU4gQkJh6bSLE", // Replace this with your Razorpay API key
+      key: process.env.RAZORPAY_KEY,
       currency: orderResponse.data.data.currency,
       amount: `${orderResponse.data.data.amount}`,
       order_id: orderResponse.data.data.id,
       name: "StudyNotion",
       description: "Thank you for Purchasing the Course.",
-      image: "URL_OR_PATH_TO_YOUR_LOGO", // Replace this with your logo image URL or path
+      image: rzpLogo,
       prefill: {
         name: `${user_details.firstName} ${user_details.lastName}`,
         email: user_details.email,
       },
       handler: function (response) {
-        // sendPaymentSuccessEmail(response, orderResponse.data.data.amount, token)
-        // verifyPayment({ ...response, courses }, token, navigate, dispatch)
+        sendPaymentSuccessEmail(response, orderResponse.data.data.amount, token)
+        verifyPayment({ ...response, courses }, token, navigate, dispatch)
       },
     }
     const paymentObject = new window.Razorpay(options)
@@ -87,8 +95,6 @@ export async function BuyCourse(token, courses, user_details, navigate, dispatch
   }
   toast.dismiss(toastId)
 }
-
-
 
 // Verify the Payment
 async function verifyPayment(bodyData, token, navigate, dispatch) {

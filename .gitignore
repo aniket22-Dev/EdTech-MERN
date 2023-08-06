@@ -28,3 +28,4 @@ pnpm-lock.yaml
 .vercel
 *.xml
 *.xml
+.idea/workspace.xml
