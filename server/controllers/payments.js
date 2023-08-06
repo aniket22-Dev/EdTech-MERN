@@ -11,6 +11,11 @@ const { paymentSuccessEmail } = require("../mail/templates/paymentSuccessEmail")
 const CourseProgress = require("../models/CourseProgress")
 
 // Capture the payment and initiate the Razorpay order
+const razorpayInstance = new Razorpay({
+  key_id: "rzp_test_9RU4gQkJh6bSLE",
+  key_secret: "WiKaAMDc6PCyMl0U6QQdnGqL",
+});
+
 exports.capturePayment = async (req, res) => {
   const { courses } = req.body;
   const userId = req.user.id;
@@ -33,7 +38,9 @@ exports.capturePayment = async (req, res) => {
       // Check if the user is already enrolled in the course
       const uid = new mongoose.Types.ObjectId(userId);
       if (course.studentsEnrolled.includes(uid)) {
-        return res.status(400).json({ success: false, message: "Student is already Enrolled" });
+        return res
+          .status(400)
+          .json({ success: false, message: "Student is already Enrolled" });
       }
 
       // Add the price of the course to the total amount
@@ -47,16 +54,20 @@ exports.capturePayment = async (req, res) => {
     };
 
     // Initiate the payment using Razorpay
-    const paymentResponse = await instance.orders.create(options);
-    console.log("Payment Response from Razorpay:", paymentResponse);
-
-    res.json({
-      success: true,
-      data: paymentResponse,
+    razorpayInstance.orders.create(options, (err, paymentResponse) => {
+      if (err) {
+        console.log("Error in capturePayment:", err);
+        res.status(500).json({ success: false, message: "Could not initiate order." });
+      } else {
+        console.log("Payment Response from Razorpay:", paymentResponse);
+        res.json({
+          success: true,
+          data: paymentResponse,
+        });
+      }
     });
-  }  catch (error) {
+  } catch (error) {
     console.log("Error in capturePayment:", error);
-    console.log("Razorpay Error Response:", error.response);
     res.status(500).json({ success: false, message: "Could not initiate order." });
   }
 };
