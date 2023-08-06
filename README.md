@@ -1,3 +1,5 @@
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/sqwm.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
 # StudyNotion Edtech Project
 Deployed site: https://ed-tech-mern-ouyirvboe-aniket22-dev.vercel.app/
 
