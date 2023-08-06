@@ -5,7 +5,7 @@ import { resetCart } from "../../slices/cartSlice"
 import { setUser } from "../../slices/profileSlice"
 import { apiConnector } from "../apiConnector"
 import { endpoints } from "../apis"
-import {Logtail} from "@logtail/node";
+// import {Logtail} from "@logtail/node";
 
 
 const {
@@ -14,7 +14,7 @@ const {
   LOGIN_API,
   RESETPASSTOKEN_API,
   RESETPASSWORD_API,
-  LOG_TAIL_KEY
+
 } = endpoints
 
 export function sendOtp(email, navigate) {
@@ -97,8 +97,7 @@ export function login(email, password, navigate) {
       })
 
       //console.log("LOGIN API RESPONSE............", response)
-      LOG_TAIL_KEY.info("Login SuccessFully", response);
-      LOG_TAIL_KEY.flush()
+      // LOG_TAIL_KEY.info("LOGIN SuccessFully", response);
       if (!response.data.success) {
         throw new Error(response.data.message)
       }
