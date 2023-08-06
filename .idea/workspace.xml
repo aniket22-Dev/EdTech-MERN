@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="refactored capturePayement code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/payments.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/payments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/operations/studentFeaturesAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/operations/studentFeaturesAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/core/Auth/SignupForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/core/Auth/SignupForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
