@@ -54,17 +54,12 @@ exports.capturePayment = async (req, res) => {
     };
 
     // Initiate the payment using Razorpay
-    razorpayInstance.orders.create(options, (err, paymentResponse) => {
-      if (err) {
-        console.log("Error in capturePayment:", err);
-        res.status(500).json({ success: false, message: "Could not initiate order." });
-      } else {
-        console.log("Payment Response from Razorpay:", paymentResponse);
-        res.json({
-          success: true,
-          data: paymentResponse,
-        });
-      }
+    const paymentResponse = await razorpayInstance.orders.create(options);
+
+    console.log("Payment Response from Razorpay:", paymentResponse);
+    res.json({
+      success: true,
+      data: paymentResponse,
     });
   } catch (error) {
     console.log("Error in capturePayment:", error);
