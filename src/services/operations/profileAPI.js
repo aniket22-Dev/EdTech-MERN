@@ -4,8 +4,8 @@ import { setLoading, setUser } from "../../slices/profileSlice"
 import { apiConnector } from "../apiConnector"
 import { profileEndpoints } from "../apis"
 import { logout } from "./authAPI"
-const { Logtail } = require("@logtail/node");
-const logtail = new Logtail("cU3mKUTdt4ibYKSckuJHyv9b");
+// const { Logtail } = require("@logtail/node");
+// const logtail = new Logtail("cU3mKUTdt4ibYKSckuJHyv9b");
 
 const {
   GET_USER_DETAILS_API,
@@ -21,8 +21,8 @@ export function getUserDetails(token, navigate) {
       const response = await apiConnector("GET", GET_USER_DETAILS_API, null, {
         Authorization: `Bearer ${token}`,
       })
-      logtail.error("GET_USER_DETAILS API RESPONSE COMING TO LOGTAIL", response);
-      logtail.flush();
+      // logtail.error("GET_USER_DETAILS API RESPONSE COMING TO LOGTAIL", response);
+      // logtail.flush();
       console.log("GET_USER_DETAILS API RESPONSE............", response)
 
       if (!response.data.success) {
