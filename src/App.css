@@ -244,3 +244,7 @@ details > summary::-webkit-details-marker {
 .section_heading {
   @apply text-2xl font-bold text-richblack-5 lg:text-4xl;
 }
+
+.swiper.swiper-initialized.swiper-horizontal.swiper-free-mode.w-full.swiper-backface-hidden {
+  width: 100rem;
+}
