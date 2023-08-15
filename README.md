@@ -2,7 +2,7 @@
 
 
 # StudyNotion Edtech Project
-Deployed site: ed-tech-mern.vercel.app
+Deployed site: https://ed-tech-mern.vercel.app/
 
 API WEB SERIVE: https://ed-tech-v1.onrender.com
 
