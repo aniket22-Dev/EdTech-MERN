@@ -48,7 +48,7 @@ function ReviewSlider() {
             disableOnInteraction: false,
           }}
           modules={[FreeMode, Pagination, Autoplay]}
-          className="w-full "
+          className="w-[100rem] "
         >
           {reviews.map((review, i) => {
             return (
