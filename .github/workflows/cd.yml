@@ -25,4 +25,4 @@ jobs:
 
       - name: Run tests
         run: npx jest
-        working-directory: server/test
+        working-directory: server/src/test
