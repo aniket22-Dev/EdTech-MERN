@@ -5,15 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="added authentication API test Case">
-      <change afterPath="$PROJECT_DIR$/server/src/test/contactUsAPI.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/test/courseProgressAPI.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/coverage-final.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/Auth.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/Auth.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/Category.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/Category.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/ContactUs.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/ContactUs.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/contactFormRes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/contactFormRes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/emailVerificationTemplate.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/emailVerificationTemplate.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/passwordUpdate.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/passwordUpdate.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/models/Category.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/models/Category.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/models/OTP.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/models/OTP.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/models/Profile.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/models/Profile.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/models/User.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/models/User.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/models/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/models/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/utils/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/utils/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/utils/mailSender.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/utils/mailSender.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/test/authAPI.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/authAPI.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/test/categoryAPI.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/test/categoryAPI.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="release-V1" />
+        <entry key="$PROJECT_DIR$" value="AuthAPI_Test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,31 +66,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "AuthAPI__Test",
-    "last_opened_file_path": "D:/GitHub/EdTech MERN/server/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "D:/GitHub/EdTech MERN/server/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Subversion",
-    "ts.external.directory.path": "D:\\Program Files\\JetBrains\\WebStorm 2023.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;release-V1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/EdTech MERN/server/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/GitHub/EdTech MERN/server/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Subversion&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\WebStorm 2023.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub\EdTech MERN\server\src" />
       <recent name="D:\GitHub\EdTech MERN\server" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.should throw error and return failure message if email sending fails">
+  <component name="RunManager" selected="Jest.updateCourseProgress - Subsection Already Completed.should return an error if the subsection is already completed">
     <configuration name="Signup with valid fields and OTP.should create a new user and return success message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
@@ -88,18 +101,6 @@
       <test-names>
         <test-name value="Signup with valid fields and OTP" />
         <test-name value="should create a new user and return success message" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="User Registration" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/server/" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/server/src/test/authAPI.test.js" />
-      <test-names>
-        <test-name value="User Registration" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -147,20 +148,33 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="updateCourseProgress - Subsection Already Completed.should return an error if the subsection is already completed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/server/" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/server/src/test/courseProgressAPI.test.js" />
+      <test-names>
+        <test-name value="updateCourseProgress - Subsection Already Completed" />
+        <test-name value="should return an error if the subsection is already completed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Jest.updateCourseProgress - Subsection Already Completed.should return an error if the subsection is already completed" />
       <item itemvalue="Jest.Signup with valid fields and OTP.should create a new user and return success message" />
-      <item itemvalue="Jest.User Registration" />
       <item itemvalue="Jest.User Registration.should return an error when required fields are missing" />
       <item itemvalue="Jest.should send email successfully and return success message" />
       <item itemvalue="Jest.should throw error and return failure message if email sending fails" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.updateCourseProgress - Subsection Already Completed.should return an error if the subsection is already completed" />
         <item itemvalue="Jest.should throw error and return failure message if email sending fails" />
         <item itemvalue="Jest.should send email successfully and return success message" />
         <item itemvalue="Jest.User Registration.should return an error when required fields are missing" />
         <item itemvalue="Jest.Signup with valid fields and OTP.should create a new user and return success message" />
-        <item itemvalue="Jest.User Registration" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +195,7 @@
       <workItem from="1696066080491" duration="931000" />
       <workItem from="1696074647200" duration="5018000" />
       <workItem from="1696132268749" duration="2458000" />
+      <workItem from="1696180185606" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="changed directory structure">
       <option name="closed" value="true" />
@@ -566,49 +581,41 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
           <line>37</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
           <line>24</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
           <line>41</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
           <line>43</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
           <line>110</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
           <line>109</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
           <line>107</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
           <line>106</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>

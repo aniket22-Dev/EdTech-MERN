@@ -1,7 +1,7 @@
 const { createCategory } = require('../../controllers/Category');
 const mongoose = require("mongoose");
 
-describe('exports', () => {
+describe('Category API Test case', () => {
   const uri = 'mongodb+srv://dbVue:9810189819Ab!@cluster0.idev8jp.mongodb.net/Test-ed-tech'; // Replace with your actual URI
 
   beforeAll(async () => {

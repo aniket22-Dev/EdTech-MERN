@@ -5,7 +5,7 @@ const Profile = require("../../models/Profile")
 const { signup } = require('../../controllers/Auth')
 const mongoose = require("mongoose");
 
-describe('User Registration', () => {
+describe('Auth API Test Cases', () => {
   let req;
   let res;
 
