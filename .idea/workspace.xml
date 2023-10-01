@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="added Log Tail">
-      <change afterPath="$PROJECT_DIR$/server/src/test/authAPI.test.js" afterDir="false" />
+    <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="added authentication API test Case">
+      <change afterPath="$PROJECT_DIR$/server/src/test/contactUsAPI.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/coverage-final.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/Category.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/Category.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/models/Category.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/models/Category.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/models/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/models/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/mail/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/utils/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/utils/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/utils/mailSender.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/utils/mailSender.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +77,7 @@
       <recent name="D:\GitHub\EdTech MERN\server" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Signup with valid fields and OTP.should create a new user and return success message">
+  <component name="RunManager" selected="Jest.should throw error and return failure message if email sending fails">
     <configuration name="Signup with valid fields and OTP.should create a new user and return success message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
@@ -108,7 +103,7 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="User Registration.should register a user successfully with all required fields" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="User Registration.should return an error when required fields are missing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$/server/" />
@@ -117,7 +112,7 @@
       <test-file value="$PROJECT_DIR$/server/src/test/authAPI.test.js" />
       <test-names>
         <test-name value="User Registration" />
-        <test-name value="should register a user successfully with all required fields" />
+        <test-name value="should return an error when required fields are missing" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -128,46 +123,44 @@
       <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="exports.should return 500 if an error occurs during category creation" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="should send email successfully and return success message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$/server/" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/server/src/test/categoryAPI.test.js" />
+      <test-file value="$PROJECT_DIR$/server/src/test/contactUsAPI.test.js" />
       <test-names>
-        <test-name value="exports" />
-        <test-name value="should return 500 if an error occurs during category creation" />
+        <test-name value="should send email successfully and return success message" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="exports.should return a JSON object" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="should throw error and return failure message if email sending fails" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$/server/" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/server/src/test/categoryAPI.test.js" />
+      <test-file value="$PROJECT_DIR$/server/src/test/contactUsAPI.test.js" />
       <test-names>
-        <test-name value="exports" />
-        <test-name value="should return a JSON object" />
+        <test-name value="should throw error and return failure message if email sending fails" />
       </test-names>
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Jest.Signup with valid fields and OTP.should create a new user and return success message" />
       <item itemvalue="Jest.User Registration" />
-      <item itemvalue="Jest.User Registration.should register a user successfully with all required fields" />
-      <item itemvalue="Jest.exports.should return 500 if an error occurs during category creation" />
-      <item itemvalue="Jest.exports.should return a JSON object" />
+      <item itemvalue="Jest.User Registration.should return an error when required fields are missing" />
+      <item itemvalue="Jest.should send email successfully and return success message" />
+      <item itemvalue="Jest.should throw error and return failure message if email sending fails" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.should throw error and return failure message if email sending fails" />
+        <item itemvalue="Jest.should send email successfully and return success message" />
+        <item itemvalue="Jest.User Registration.should return an error when required fields are missing" />
         <item itemvalue="Jest.Signup with valid fields and OTP.should create a new user and return success message" />
         <item itemvalue="Jest.User Registration" />
-        <item itemvalue="Jest.User Registration.should register a user successfully with all required fields" />
-        <item itemvalue="Jest.exports.should return a JSON object" />
-        <item itemvalue="Jest.exports.should return 500 if an error occurs during category creation" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +180,7 @@
       <workItem from="1691817835596" duration="1603000" />
       <workItem from="1696066080491" duration="931000" />
       <workItem from="1696074647200" duration="5018000" />
-      <workItem from="1696132268749" duration="1566000" />
+      <workItem from="1696132268749" duration="2458000" />
     </task>
     <task id="LOCAL-00001" summary="changed directory structure">
       <option name="closed" value="true" />
@@ -453,7 +446,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696065036044</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added authentication API test Case">
+      <option name="closed" value="true" />
+      <created>1696133911219</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1696133911219</updated>
+    </task>
+    <task id="LOCAL-00035" summary="added authentication API test Case">
+      <option name="closed" value="true" />
+      <created>1696133938071</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1696133938071</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +482,8 @@
     <MESSAGE value="added log tail" />
     <MESSAGE value="refactored capturePayement code" />
     <MESSAGE value="added Log Tail" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Log Tail" />
+    <MESSAGE value="added authentication API test Case" />
+    <option name="LAST_COMMIT_MESSAGE" value="added authentication API test Case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
