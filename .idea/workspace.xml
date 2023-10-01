@@ -5,14 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e51d6fd0-4ee3-4010-996d-d64e945f70eb" name="Changes" comment="added Log Tail">
+      <change afterPath="$PROJECT_DIR$/server/src/test/authAPI.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/coverage-final.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/Category.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/Category.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/models/Category.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/models/Category.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/models/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/models/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -21,6 +39,13 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="release-V1" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,7 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "logs__addition",
+    "git-widget-placeholder": "AuthAPI__Test",
     "last_opened_file_path": "D:/GitHub/EdTech MERN/server/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -57,51 +82,50 @@
       <recent name="D:\GitHub\EdTech MERN\server" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.exports.should return a JSON object">
+  <component name="RunManager" selected="Jest.Signup with valid fields and OTP.should create a new user and return success message">
+    <configuration name="Signup with valid fields and OTP.should create a new user and return success message" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/server/" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/server/src/test/authAPI.test.js" />
+      <test-names>
+        <test-name value="Signup with valid fields and OTP" />
+        <test-name value="should create a new user and return success message" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="User Registration" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/server/" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/server/src/test/authAPI.test.js" />
+      <test-names>
+        <test-name value="User Registration" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="User Registration.should register a user successfully with all required fields" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/server/" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/server/src/test/authAPI.test.js" />
+      <test-names>
+        <test-name value="User Registration" />
+        <test-name value="should register a user successfully with all required fields" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest">
       <node-interpreter value="project" />
       <working-dir value="$PROJECT_DIR$/server/" />
       <envs />
       <scope-kind value="ALL" />
-      <method v="2" />
-    </configuration>
-    <configuration name="exports.should be an asynchronous function" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/server/" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/server/src/test/categoryAPI.test.js" />
-      <test-names>
-        <test-name value="exports" />
-        <test-name value="should be an asynchronous function" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="exports.should return 200 with success message after creating a new category" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/server/" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/server/src/test/categoryAPI.test.js" />
-      <test-names>
-        <test-name value="exports" />
-        <test-name value="should return 200 with success message after creating a new category" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="exports.should return 400 when name is not provided" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/server/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/server/" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/server/src/test/categoryAPI.test.js" />
-      <test-names>
-        <test-name value="exports" />
-        <test-name value="should return 400 when name is not provided" />
-      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="exports.should return 500 if an error occurs during category creation" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
@@ -131,19 +155,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.exports.should be an asynchronous function" />
-      <item itemvalue="Jest.exports.should return 200 with success message after creating a new category" />
-      <item itemvalue="Jest.exports.should return 400 when name is not provided" />
+      <item itemvalue="Jest.Signup with valid fields and OTP.should create a new user and return success message" />
+      <item itemvalue="Jest.User Registration" />
+      <item itemvalue="Jest.User Registration.should register a user successfully with all required fields" />
       <item itemvalue="Jest.exports.should return 500 if an error occurs during category creation" />
       <item itemvalue="Jest.exports.should return a JSON object" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Signup with valid fields and OTP.should create a new user and return success message" />
+        <item itemvalue="Jest.User Registration" />
+        <item itemvalue="Jest.User Registration.should register a user successfully with all required fields" />
         <item itemvalue="Jest.exports.should return a JSON object" />
-        <item itemvalue="Jest.exports.should be an asynchronous function" />
         <item itemvalue="Jest.exports.should return 500 if an error occurs during category creation" />
-        <item itemvalue="Jest.exports.should return 200 with success message after creating a new category" />
-        <item itemvalue="Jest.exports.should return 400 when name is not provided" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +187,7 @@
       <workItem from="1691817835596" duration="1603000" />
       <workItem from="1696066080491" duration="931000" />
       <workItem from="1696074647200" duration="5018000" />
+      <workItem from="1696132268749" duration="1566000" />
     </task>
     <task id="LOCAL-00001" summary="changed directory structure">
       <option name="closed" value="true" />
@@ -527,6 +552,54 @@
           <url>file://$PROJECT_DIR$/server/controllers/Category.js</url>
           <line>24</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
+          <line>37</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
+          <line>41</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
+          <line>43</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
+          <line>110</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
+          <line>109</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
+          <line>107</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/controllers/Auth.js</url>
+          <line>106</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
