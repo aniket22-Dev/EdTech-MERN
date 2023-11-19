@@ -12,3 +12,5 @@ exports.uploadImageToCloudinary = async (file, folder, height, quality) => {
   console.log("OPTIONS", options)
   return await cloudinary.uploader.upload(file.tempFilePath, options)
 }
+
+//This is for the uploadImageToCloudinary
