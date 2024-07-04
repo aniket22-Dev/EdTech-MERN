@@ -20,7 +20,7 @@ To Run this project make Two folders backend and frontend
 
 ** **This** **is** **for** **Backend****
 
-then type npm commands:
+then type npm commands :
 
 1) npm init
 2) npm i express mongoose dotenv
