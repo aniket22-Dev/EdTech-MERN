@@ -3,8 +3,6 @@ name: CI/CD and CodeQL Analysis
 on:
   push:
     branches: ["release-V1"]
-  pull_request:
-    branches: ["release-V1"]
   schedule:
     - cron: '30 7 * * 0'
 
