@@ -1,0 +1,58 @@
+name: CI/CD and CodeQL Analysis
+
+on:
+  push:
+    branches: ["release-V1"]
+  schedule:
+    - cron: '30 7 * * 0'
+
+jobs:
+  analyze:
+    name: CodeQL Analysis
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Initializes the CodeQL tools for scanning.
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: javascript
+
+      # Autobuild attempts to build any compiled languages (C/C++, C#, Go, or Java).
+      # If this step fails, then you should remove it and run the build manually (see below)
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v2
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+        with:
+          category: "/language:javascript"
+
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    needs: analyze
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: server
+
+      - name: Run tests
+        run: npx jest
+        working-directory: server/src/test
