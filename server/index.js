@@ -64,6 +64,6 @@ app.listen(PORT, () => {
 });
 const consoleTransport = new winston.transports.Console();
 winston.add(consoleTransport);
-winston.info('Getting started with Winston');
-winston.error('Here is an error message');
+winston.info('Winston Service Started!!');
+// winston.error('Here is an error message');
 // End of code.
