@@ -1,4 +1,4 @@
-name: CI/CD and CodeQL Analysis
+name: CI/CD, CodeQL Analysis, and Deploy
 
 on:
   push:
@@ -42,7 +42,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -56,3 +56,14 @@ jobs:
       - name: Run tests
         run: npx jest
         working-directory: server/src/test
+
+      - name: Deploy to Render
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer $RENDER_API_KEY" \
+            -H "Accept: application/json" \
+            -H "Content-Type: application/json" \
+            -d '{"serviceId": "YOUR_SERVICE_ID"}' \
+            https://api.render.com/v1/services/YOUR_SERVICE_ID/deploys
