@@ -65,5 +65,5 @@ jobs:
             -H "Authorization: Bearer $RENDER_API_KEY" \
             -H "Accept: application/json" \
             -H "Content-Type: application/json" \
-            -d '{"serviceId": "YOUR_SERVICE_ID"}' \
-            https://api.render.com/v1/services/YOUR_SERVICE_ID/deploys
+            -d '{"serviceId": "srv-cj75kl5jeehc73cqfqhg"}' \
+            https://api.render.com/v1/services/srv-cj75kl5jeehc73cqfqhg/deploys
