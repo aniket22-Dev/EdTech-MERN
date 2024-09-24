@@ -66,4 +66,14 @@ const consoleTransport = new winston.transports.Console();
 winston.add(consoleTransport);
 winston.info('Winston Service Started!!');
 // winston.error('Here is an error message');
+
+// Function to ping the server every 30 seconds
+setInterval(async () => {
+  try {
+     await axios.get(`https://ed-tech-v1.onrender.com`);
+  } catch (error) {
+    winston.error("Error pinging the server:", error.message);
+  }
+}, 30000); // 30 seconds interval
+
 // End of code.
