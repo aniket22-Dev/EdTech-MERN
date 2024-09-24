@@ -13,7 +13,7 @@ const { cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 const winston = require('winston');
-
+const https = require('https'); // Added this line
 
 // Setting up port number
 const PORT = process.env.PORT || 4000;
@@ -28,16 +28,16 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 app.use(
-	cors({
-		origin: "*",
-		credentials: true,
-	})
+  cors({
+    origin: "*",
+    credentials: true,
+  })
 );
 app.use(
-	fileUpload({
-		useTempFiles: true,
-		tempFileDir: "/tmp/",
-	})
+  fileUpload({
+    useTempFiles: true,
+    tempFileDir: "/tmp/",
+  })
 );
 
 // Connecting to cloudinary
@@ -52,10 +52,10 @@ app.use("/api/v1/reach", contactUsRoute);
 
 // Testing the server
 app.get("/", (req, res) => {
-	return res.json({
-		success: true,
-		message: "Your server is up and running ...",
-	});
+  return res.json({
+    success: true,
+    message: "Your server is up and running ...",
+  });
 });
 
 // Listening to the server
@@ -67,13 +67,14 @@ winston.add(consoleTransport);
 winston.info('Winston Service Started!!');
 // winston.error('Here is an error message');
 
-// Function to ping the server every 30 seconds
-setInterval(async () => {
-  try {
-     await axios.get(`https://ed-tech-v1.onrender.com`);
-  } catch (error) {
+// Function to ping the server every 30 seconds without using axios
+setInterval(() => {
+  https.get('https://ed-tech-v1.onrender.com', (res) => {
+    // Optionally handle the response
+    // console.log(`Status Code: ${res.statusCode}`);
+  }).on('error', (error) => {
     winston.error("Error pinging the server:", error.message);
-  }
+  });
 }, 30000); // 30 seconds interval
 
 // End of code.
