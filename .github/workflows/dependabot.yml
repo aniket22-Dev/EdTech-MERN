@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"           # matches root package.json (see package.json at ref c3ca443a4b92cd40af5f846a358c567035245249)
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "npm"
+    directory: "/server"     # matches server/package.json (see server/package.json at ref c3ca443a4b92cd40af5f846a358c567035245249)
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
