@@ -2,9 +2,9 @@ name: Cronitor Monitoring Relay
 
 on:
   push:
-    branches: ["release-V1"]
+    branches: ["release-V1-1"]
   workflow_run:
-    workflows: ['*']
+    workflows: ['1']
     types: [requested,completed]
 
 jobs:
