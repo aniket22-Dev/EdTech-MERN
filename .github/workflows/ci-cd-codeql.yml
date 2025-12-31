@@ -4,7 +4,7 @@ on:
   push:
     branches: ["release-V1"]
   schedule:
-    - cron: '30 7 * * 0'
+    - cron: '0 0 1 * *' #'30 7 * * 0'
 
 jobs:
   analyze:
